@@ -59,7 +59,7 @@ const CartContainer = () => {
         const body = {
             products : cartItems
         }
-        const response = await fetch("http://localhost:8000/create-checkout-session",{
+        const response = await fetch("https://fruity-backend-yw32.onrender.com/create-checkout-session",{
             method:"POST",
             headers:headers,
             body:JSON.stringify(body)
